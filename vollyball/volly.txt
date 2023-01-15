@@ -1,0 +1,49 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+float playsvolleyball(string year, int holidays , int weekends);
+
+main()
+{
+  string year;
+  int holidays;
+  int weekends;
+  float res;
+  float result;
+  cout<< " enter the year(leap/normal)";
+  cin>>year;
+  cout<<"enter the holidays";
+  cin>>holidays;
+  cout<<" enter the weekends:";
+  cin>>weekends;
+  res=playsvolleyball(year,holidays ,weekends);
+  cout<< " valdimar plays "<< res << "days";
+  
+}
+float playsvolleyball(string year, int holidays , int weekends)
+{
+    float holidaystt;
+    float weekendss;
+    float weekendsofia;
+    float res;
+    float perc;
+    float result;
+
+    holidaystt=(2/3)*holidays;
+    weekendss=7*weekends;
+    weekendss=weekendss-holidaystt;
+    weekendsofia=48-weekends;
+    weekendsofia=(3/4)*weekendsofia;
+    floor(weekendsofia);
+    result=weekendsofia+weekends+holidaystt;
+    if(year=="leap")
+    {
+        perc=(result*15)/100;
+        res=result+perc;
+    }
+      else
+      {
+        res=result;
+      }
+      return res;
+}

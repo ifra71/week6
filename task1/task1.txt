@@ -1,0 +1,44 @@
+#include<iostream>
+using namespace std;
+char calcGrade(int marks );
+main()
+{
+   int marks;
+   char Grade;
+   char result;
+   cout<< " enter marks : " ;
+   cin>>marks;
+   result= calcGrade(marks);
+
+}
+char calcGrade(int marks)
+{
+    if(marks<50)
+    {
+       result = ' F' ;
+
+    }
+    if (marks>=50 && marks<=60)
+    {
+        result='E';
+    }
+    if(marks>=61 && marks<=70)
+    {
+        result='D';
+
+    }
+    if(marks>=71 && marks<=80)
+    {
+      result= 'C';
+    } 
+    if(marks>=81 && marks<=85)
+    {
+        result= ' B'
+    }
+    if(marks>85)
+    {
+        result= ' A ';
+    }
+     return result;
+}
+

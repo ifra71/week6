@@ -1,0 +1,51 @@
+#include<iostream>
+using namespace std;
+string gradee(int totalmarks , string grade , float percentage , float obtained);
+main()
+{
+    float english,maths,chemistry,biology,socialsci;
+    string studentname;
+    string grade;
+    cout<< " enter your name : ";
+    cin>>studentname;
+    cout<< " enter marks of english ";
+    cin>>english;
+    cout<< " enter marks of maths ";
+    cin>>maths;
+    cout<< " enter marks of chemistry ";
+    cin>>chemistry;
+    cout<< " enter marks of biology ";
+    cin>> biology;
+    cout<< " enter marks of social sci ";
+    cin>>socialsci;
+    grade=string gradee(totalmarks,grade,percentage,obtained);
+    cout<< " grade is : " << grade << endl;
+
+}
+string gradee(int totalmarks , string grade , float percentage , float obtained)
+{
+    int totalmarks;
+    int obtained;
+    float percentage;
+    totalmarks=500;
+    string grade;
+    obtained=english+maths+chemistry+biology+socialsci;
+    percentage=(obtained/total)*100;
+    if(percentage==90 || percentage<=100)
+    {
+        grade="A+";
+    }
+    else if(percentage==80 || percentage<=90)
+    {
+        grade="A";
+    }
+     else if(percentage==70 || percentage<=80)
+    {
+        grade="B+";
+    }
+     else if(percentage==60 || percentage<=70)
+    {
+        grade="b";
+    }
+    return grade;
+}

@@ -1,0 +1,36 @@
+#include<iostream>
+using namespace std;
+int isGreatest(int num1 , int num2 , int num3);
+main()
+{
+   int num1;
+   int num2;
+   int num3;
+   int isGreatest;
+   int result;
+   cout <<  " enter first number : ";
+   cin>> num1;
+   cout << " enter second number : ";
+   cin>> num2;
+   cout << " enter third number   : " ;
+   cin>> num3;
+  result=isGreatest(num1, num2, num3);
+  cout<< " the greatest one is: " << result;
+
+}
+int isGreatest(int num1 , num2 , num3)
+{
+  if(num1>num2 && num1>num3)
+  {
+    return result;
+  }
+  if (num2>num1 && num2>num3)
+  {
+    return result;
+  }
+  if (num3>num1 && num3 > num2)
+  {
+    return result;
+  }
+
+}
